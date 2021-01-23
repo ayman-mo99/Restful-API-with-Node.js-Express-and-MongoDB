@@ -32,7 +32,8 @@ To run the server side<br />
 <pre>
 
 ## Schemas used 
-* <pre>UserSchema: {
+<pre>
+UserSchema: {
   email: {
     type: String,
     required: true,
@@ -53,7 +54,8 @@ To run the server side<br />
 <pre>
 
 <br />----
-* <pre> PostSchema : {
+<pre>
+PostSchema : {
   name: {
     type: String,
     required: true,
