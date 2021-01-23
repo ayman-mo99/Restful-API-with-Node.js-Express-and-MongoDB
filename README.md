@@ -9,19 +9,19 @@ This is a simple restful API using node, express and MongoDB where we make the f
 To run the server side<br />
 `npm run server`<br />
 ## Available end-points
-###first : /api/user<br />
+### first : /api/user<br />
 * http verbs:post     /login       (return token called auth-token)
 * http verbs:post     /register     (return token called auth-token)
 * http verbs:put     /update/:id     (use the token called auth-token)
 * http verbs:delete     /delete/:id     (use the token called auth-token)
 * http verbs:get     /myposts/:id<br />
 
-###second : /api/post<br />
+### second : /api/post<br />
 * http verbs:get     /
 * http verbs:post     /add     (use the token called auth-token)
 * http verbs:put     /edite/:id     (use the token called auth-token)
 * http verbs:delete     /delete/:id     (use the token called auth-token)<br />
-##Schemas used 
+## Schemas used 
 * UserSchema: {
   email: {
     type: String,
@@ -63,7 +63,7 @@ To run the server side<br />
   },
 }
 <br />
-##TEST
+## TEST
 online : https://api-for-usersandposts.herokuapp.com/
 or run local on port 4000
 <br />
@@ -71,6 +71,6 @@ or run local on port 4000
 You have to create .env file and set your DB link and JWT secert 
 ## Inspiration
 These tutorials helped me:
-*(https://www.youtube.com/watch?v=0oXYLzuucwE&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
-*(https://www.youtube.com/watch?v=SnoAwLP1a-0&list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
+* (https://www.youtube.com/watch?v=0oXYLzuucwE&list=PL55RiY5tL51q4D-B63KBnygU6opNPFk_q)
+* (https://www.youtube.com/watch?v=SnoAwLP1a-0&list=PL4cUxeGkcC9iqqESP8335DA5cRFp8loyp)
 
