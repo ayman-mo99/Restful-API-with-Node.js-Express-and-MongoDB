@@ -15,25 +15,20 @@ To run the server side<br />
 `npm run server`<br />
 ## Available end-points
 ### first : /api/user<br />
-<pre>
-* http verb:post     /login       (return token called auth-token)
-* http verb:post     /register     (return token called auth-token)
-* http verb:put     /update/:id     (use the token called auth-token)
-* http verb:delete     /delete/:id     (use the token called auth-token)
-* http verb:get     /myposts/:id<br />
-<pre>
+* http verb:post  &nbsp;&nbsp;   /login    &nbsp;&nbsp;   (return token called auth-token)
+* http verb:post   &nbsp;&nbsp;  /register   &nbsp;&nbsp;  (return token called auth-token)
+* http verb:put   &nbsp;&nbsp;  /update/:id  &nbsp;&nbsp;   (use the token called auth-token)
+* http verb:delete   &nbsp;&nbsp;  /delete/:id   &nbsp;&nbsp;  (use the token called auth-token)
+* http verb:get &nbsp;&nbsp;    /myposts/:id<br />
 
 ### second : /api/post<br />
-<pre>
-* http verb:get     /
-* http verb:post     /add     (use the token called auth-token)
-* http verb:put     /edite/:id     (use the token called auth-token)
-* http verb:delete     /delete/:id     (use the token called auth-token)<br />
-<pre>
+* http verb:get  &nbsp;&nbsp;   /
+* http verb:post  &nbsp;&nbsp;   /add   &nbsp;&nbsp;  (use the token called auth-token)
+* http verb:put   &nbsp;&nbsp;  /edite/:id   &nbsp;&nbsp;  (use the token called auth-token)
+* http verb:delete   &nbsp;&nbsp;  /delete/:id   &nbsp;&nbsp;  (use the token called auth-token)<br />
 
 ## Schemas used 
-<pre>
-UserSchema: {
+* UserSchema: {
   email: {
     type: String,
     required: true,
@@ -51,11 +46,10 @@ UserSchema: {
     },
   ],
 }
-<pre>
 
 <br />----
-<pre>
-PostSchema : {
+
+* PostSchema : {
   name: {
     type: String,
     required: true,
@@ -76,7 +70,6 @@ PostSchema : {
     required: true,
   },
 }
-<pre>
 
 <br />
 
