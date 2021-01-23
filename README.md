@@ -9,20 +9,20 @@ This is a simple restful API using node, express and MongoDB where we make the f
 To run the server side<br />
 `npm run server`<br />
 ## Available end-points
-###first : /api/user
-http verbs:post     /login       (return token called auth-token)
-http verbs:post     /register     (return token called auth-token)
-http verbs:put     /update/:id     (use the token called auth-token)
-http verbs:delete     /delete/:id     (use the token called auth-token)
-http verbs:get     /myposts/:id
+###first : /api/user<br />
+* http verbs:post     /login       (return token called auth-token)
+* http verbs:post     /register     (return token called auth-token)
+* http verbs:put     /update/:id     (use the token called auth-token)
+* http verbs:delete     /delete/:id     (use the token called auth-token)
+* http verbs:get     /myposts/:id<br />
 
-###second : /api/post
-http verbs:get     /
-http verbs:post     /add     (use the token called auth-token)
-http verbs:put     /edite/:id     (use the token called auth-token)
-http verbs:delete     /delete/:id     (use the token called auth-token)
-##Schemas used
-UserSchema: {
+###second : /api/post<br />
+* http verbs:get     /
+* http verbs:post     /add     (use the token called auth-token)
+* http verbs:put     /edite/:id     (use the token called auth-token)
+* http verbs:delete     /delete/:id     (use the token called auth-token)<br />
+##Schemas used 
+* UserSchema: {
   email: {
     type: String,
     required: true,
@@ -40,8 +40,8 @@ UserSchema: {
     },
   ],
 }
-----
-PostSchema : {
+<br />----
+* PostSchema : {
   name: {
     type: String,
     required: true,
@@ -62,9 +62,11 @@ PostSchema : {
     required: true,
   },
 }
+<br />
 ##TEST
 online : https://api-for-usersandposts.herokuapp.com/
 or run local on port 4000
+<br />
 ## notes
 You have to create .env file and set your DB link and JWT secert 
 ## Inspiration
