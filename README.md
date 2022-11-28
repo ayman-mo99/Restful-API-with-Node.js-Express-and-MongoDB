@@ -28,48 +28,48 @@ To run the server side<br />
 * http verb:delete   &nbsp;&nbsp;  /delete/:id   &nbsp;&nbsp;  (use the token called auth-token)<br />
 
 ## Schemas used 
-* UserSchema: {
-  email: {
-    type: String,
-    required: true,
+* UserSchema: { <br />
+  email: { <br /> 
+    type: String, <br /> 
+    required: true, <br />
+  }, <br />
+  password: { <br />
+    type: String, <br />
+    required: true, <br />
   },
-  password: {
-    type: String,
-    required: true,
-  },
-  posts: [
-    {
-      type: mongoose.SchemaTypes.ObjectId,
-      ref: "post",
-      required: true,
-      default: [],
-    },
-  ],
-}
+  posts: [ <br />
+    { <br />
+      type: mongoose.SchemaTypes.ObjectId, <br />
+      ref: "post", <br />
+      required: true, <br />
+      default: [], <br />
+    }, <br />
+  ], <br />
+} <br />
 
 <br />----
 
-* PostSchema : {
-  name: {
-    type: String,
-    required: true,
+* PostSchema : { <br />
+  name: { <br />
+    type: String, <br />
+    required: true, <br />
+  }, <br />
+  path: { <br />
+    type: String, <br />
+  }, <br />
+  discription: { <br />
+    type: String, <br />
+  }, <br />
+  likes: { <br />
+    type: Number, <br />
+    default: 0, <br />
   },
-  path: {
-    type: String,
-  },
-  discription: {
-    type: String,
-  },
-  likes: {
-    type: Number,
-    default: 0,
-  },
-  createdBy: {
-    type: mongoose.SchemaTypes.ObjectId,
-    ref: "user",
-    required: true,
-  },
-}
+  createdBy: { <br />
+    type: mongoose.SchemaTypes.ObjectId, <br />
+    ref: "user", <br />
+    required: true, <br />
+  }, <br />
+} <br />
 
 <br />
 
